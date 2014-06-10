@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Inscrição dos Alunos</title>
+    </head>
+    <body>
+        
+        <jsp:include page="header.jsp" />
+<br />
+<br />
+<section class="container">
+    <div class="hero-unit">
+    <h1 style="font-size: 32px;">Inscrição</h1>
+    <br />       
+    <p>Cadastre-se aqui no sistema Mack Eventos </p>
+    </div>
+
+    
+      <div class="row">
+            <form action="CadastroAction" method="POST">
+                Registre sua conta<br />
+                <input type="text" name="login"placeholder="Login" required="" autofocus=""><br />
+                <input type="password" placeholder="Senha" required="" name="senha"><br />
+                <input type="text" placeholder="Email" required="" name="email"><br />
+                <button type="submit" title="Cadastrar">Cadastrar</button>
+            </form>
+            
+        </div>
+          <div class="space">
+    
+</div>
+
+<jsp:include page="footer.jsp" />
+
+    </body>
+</html>
